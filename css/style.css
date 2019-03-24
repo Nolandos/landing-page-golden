@@ -1,6 +1,7 @@
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
 /*variables*/
 /*extends*/
 .flex-column, .main, .main .layer, .main .jumbotron {
@@ -63,7 +64,16 @@ body {
 }
 
 .main .layer > header .nav .logo {
+  font-family: 'Pacifico', cursive;
+  font-style: italic;
+  font-size: 2em;
+  letter-spacing: 10px;
   padding-left: 50px;
+}
+
+.main .layer > header .nav .logo a {
+  text-decoration: none;
+  color: #fdd135;
 }
 
 .main .layer > header .nav ul {

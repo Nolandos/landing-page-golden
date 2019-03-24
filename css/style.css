@@ -37,7 +37,7 @@ body {
 .main {
   height: 70vh;
   min-height: 800px;
-  background-image: url("/images/main-image.svg");
+  background-image: url("../images/main-image.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }

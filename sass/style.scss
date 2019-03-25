@@ -364,6 +364,61 @@ body {
 
 
 /*MEDIA QUERIES*/
+
+@media(max-width: 992px) {
+    .header-model {
+        .title,
+        .text {
+            padding: 0 25px;
+        }
+
+        .title {
+            font-size: 2.3em;
+        }
+
+        .text {
+            font-size: 1em;
+        }
+    }
+    .about-us {
+        .container {
+
+            .line {
+                display: none;
+            }
+
+            .history-element {
+                flex-direction: column;
+                align-items: center;
+                &:nth-child(2n+0) {
+                    flex-direction: column-reverse;
+
+                }
+
+                .left-element {
+                    &:nth-child(2n+0) {
+                        display: none;
+                    }
+                }
+                
+                .left-element,
+                .right-element {
+                    width: auto;
+                    text-align: center;
+                    margin-top: 15px;
+
+                    .wrapper {
+                        width: 70%;
+                        margin: 0 auto;
+                        float: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(max-width: 767px) {
     .main {
         .layer {            

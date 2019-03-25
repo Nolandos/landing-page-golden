@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 /*variables*/
 /*extends*/
-.flex-column, .main, .main .layer, .main .jumbotron, .services, .services .container .box-service {
+.flex-column, .main, .main .layer, .main .jumbotron, .services, .services .container .box-service, .portfolio, .portfolio .container .photo-box .description {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -30,7 +30,7 @@
   background-color: #e0bb33;
 }
 
-.header-model .title, .services .services-header .title {
+.header-model .title, .services .services-header .title, .portfolio .portfolio-header .title {
   font-family: "Montserrat", sans-serif;
   font-size: 3em;
   font-weight: bold;
@@ -38,7 +38,7 @@
   text-transform: uppercase;
 }
 
-.header-model .text, .services .services-header .text {
+.header-model .text, .services .services-header .text, .portfolio .portfolio-header .text {
   font-family: "Playfair Display", serif;
   font-size: 1.2em;
   color: #777777;
@@ -148,9 +148,14 @@ body {
   text-align: center;
 }
 
+.services .services-header {
+  margin-top: 5%;
+}
+
 .services .container {
   width: 100%;
   max-width: 1200px;
+  margin-bottom: 5%;
   display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
@@ -189,6 +194,63 @@ body {
 .services .container .box-service .circle a {
   font-size: 3.0em;
   color: #fdd135;
+}
+
+.portfolio {
+  background-color: #f7f7f7;
+}
+
+.portfolio .portfolio-header {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.portfolio .container {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.portfolio .container .photo-box {
+  width: 27%;
+  margin-bottom: 50px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.portfolio .container .photo-box .photo {
+  height: 70%;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.portfolio .container .photo-box .description {
+  height: 30%;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.portfolio .container .photo-box .description .title {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.portfolio .container .photo-box .description .text {
+  font-family: "Playfair Display", serif;
+  color: #777777;
+  font-style: italic;
+  margin-top: 2px;
 }
 
 /*MEDIA QUERIES*/

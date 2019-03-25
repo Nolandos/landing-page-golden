@@ -158,11 +158,13 @@ body {
 
     .services-header {
         @extend .header-model;
+        margin-top: 5%;
     }
     
     .container {
         width: 100%;
         max-width: 1200px;
+        margin-bottom: 5%;
         display: flex;
         margin-top: 40px;
 
@@ -171,7 +173,7 @@ body {
             text-align: center;
             padding: 15px;
             width: 33%;
-
+           
             .title {
                 font-family: $font-first;
                 margin-bottom: 0px;
@@ -195,6 +197,60 @@ body {
                 a {
                     font-size: 3.0em;
                     color: #fdd135; 
+                }
+            }
+        }
+    }
+}
+
+.portfolio {
+    @extend .flex-column;
+    background-color: #f7f7f7;
+
+    .portfolio-header {
+        @extend .header-model;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .photo-box {
+            width: 27%;
+            margin-bottom: 50px;
+            overflow: hidden;
+            background-color: #fff;
+            
+            .photo {
+                height: 70%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+            }
+
+            .description {
+                @extend .flex-column;
+                height: 30%;
+                justify-content: center;
+
+                .title {
+                    font-family: $font-first;
+                    margin-bottom: 0;
+                    font-weight: bold;
+                }
+
+                .text {
+                    font-family: $font-second;
+                    color: #777777;
+                    font-style: italic;
+                    margin-top: 2px;
                 }
             }
         }

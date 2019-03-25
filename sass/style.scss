@@ -238,4 +238,15 @@ body {
             }
         }
     }
+
+    .services {
+        .container {
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            .box-service {
+                width: 100%;
+            }
+        }
+    }
 }

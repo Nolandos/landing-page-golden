@@ -218,5 +218,14 @@ body {
   .main .layer .jumbotron .header-jumbotron .title {
     font-size: 1.7em;
   }
+  .services .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .services .container .box-service {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

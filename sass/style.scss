@@ -227,7 +227,7 @@ body {
         justify-content: space-around;
 
         .photo-box {
-            width: 27%;
+            width: 325px;
             margin-bottom: 50px;
             overflow: hidden;
             background-color: #fff;
@@ -262,7 +262,6 @@ body {
 }
 
 /*MEDIA QUERIES*/
-
 @media(max-width: 767px) {
     .main {
         .layer {            

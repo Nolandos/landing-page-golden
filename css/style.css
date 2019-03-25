@@ -35,6 +35,7 @@
   font-size: 3em;
   font-weight: bold;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .header-model .text, .services .services-header .text {

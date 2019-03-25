@@ -173,6 +173,10 @@ body {
             text-align: center;
             padding: 15px;
             width: 33%;
+            &:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+            }
            
             .title {
                 font-family: $font-first;

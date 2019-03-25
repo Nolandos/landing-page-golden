@@ -167,6 +167,11 @@ body {
   width: 33%;
 }
 
+.services .container .box-service:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .services .container .box-service .title {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 0px;

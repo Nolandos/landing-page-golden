@@ -31,6 +31,23 @@ $font-second: 'Playfair Display', serif;
     }
 }
 
+.header-model {
+    .title {
+        font-family: $font-first;
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .text {
+        font-family: $font-second;
+        font-size: 1.2em;
+        color: #777777;
+        margin-top: 5px;
+        font-style: italic;
+    }
+}
+
 
 body {
     margin: 0;
@@ -132,6 +149,57 @@ body {
       
 }
 
+/*SERVICES*/
+
+.services {
+    @extend .flex-column;
+    text-align: center;
+
+    .services-header {
+        @extend .header-model;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        margin-top: 40px;
+
+        .box-service {
+            @extend .flex-column;
+            text-align: center;
+            padding: 15px;
+            width: 33%;
+
+            .title {
+                font-family: $font-first;
+                margin-bottom: 0px;
+            }
+
+            .text {
+                color: #777777;
+                padding: 0 15px;
+                line-height: 22px;
+            }
+
+            .circle {
+                border: 2px solid #fdd135;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        
+                a {
+                    font-size: 3.0em;
+                    color: #fdd135; 
+                }
+            }
+        }
+    }
+}
+
 /*MEDIA QUERIES*/
 
 @media(max-width: 767px) {
@@ -164,7 +232,7 @@ body {
                     }
                     
                     .title {
-                        font-size: 2em;
+                        font-size: 1.7em;
                     }
                 }
             }

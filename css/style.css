@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 /*variables*/
 /*extends*/
-.flex-column, .main, .main .layer, .main .jumbotron {
+.flex-column, .main, .main .layer, .main .jumbotron, .services, .services .container .box-service {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -28,6 +28,21 @@
 
 .button-model:hover, .main .jumbotron .button:hover {
   background-color: #e0bb33;
+}
+
+.header-model .title, .services .services-header .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.header-model .text, .services .services-header .text {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2em;
+  color: #777777;
+  margin-top: 5px;
+  font-style: italic;
 }
 
 body {
@@ -127,6 +142,54 @@ body {
   color: #fff;
 }
 
+/*SERVICES*/
+.services {
+  text-align: center;
+}
+
+.services .container {
+  width: 100%;
+  max-width: 1200px;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.services .container .box-service {
+  text-align: center;
+  padding: 15px;
+  width: 33%;
+}
+
+.services .container .box-service .title {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0px;
+}
+
+.services .container .box-service .text {
+  color: #777777;
+  padding: 0 15px;
+  line-height: 22px;
+}
+
+.services .container .box-service .circle {
+  border: 2px solid #fdd135;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.services .container .box-service .circle a {
+  font-size: 3.0em;
+  color: #fdd135;
+}
+
 /*MEDIA QUERIES*/
 @media (max-width: 767px) {
   .main .layer > header {
@@ -153,7 +216,7 @@ body {
     font-size: 1.5em;
   }
   .main .layer .jumbotron .header-jumbotron .title {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 }
 /*# sourceMappingURL=style.css.map */

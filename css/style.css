@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 /*variables*/
 /*extends*/
-.flex-column, .main, .main .layer, .main .jumbotron, .services, .services .container .box-service, .portfolio, .portfolio .container .photo-box .description {
+.flex-column, .main, .main .layer, .main .jumbotron, .services, .services .container .box-service, .portfolio, .portfolio .container .photo-box .description, .about-us, .about-us .container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -30,7 +30,7 @@
   background-color: #e0bb33;
 }
 
-.header-model .title, .services .services-header .title, .portfolio .portfolio-header .title {
+.header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title {
   font-family: "Montserrat", sans-serif;
   font-size: 3em;
   font-weight: bold;
@@ -38,7 +38,7 @@
   text-transform: uppercase;
 }
 
-.header-model .text, .services .services-header .text, .portfolio .portfolio-header .text {
+.header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text {
   font-family: "Playfair Display", serif;
   font-size: 1.2em;
   color: #777777;
@@ -256,6 +256,114 @@ body {
   color: #777777;
   font-style: italic;
   margin-top: 2px;
+}
+
+.about-us .about-header {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.about-us .container {
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.about-us .container .line {
+  height: 92%;
+  border-left: 4px solid #f1f1f1;
+  position: absolute;
+  margin-top: 110px;
+  margin-bottom: 110px;
+  left: 50%;
+  z-index: -1;
+}
+
+.about-us .container .history-element {
+  width: 100%;
+  margin-top: 90px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.about-us .container .history-element .left-element,
+.about-us .container .history-element .right-element {
+  width: 33%;
+  padding: 0 15px;
+}
+
+.about-us .container .history-element .left-element .title,
+.about-us .container .history-element .right-element .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about-us .container .history-element .left-element .description,
+.about-us .container .history-element .right-element .description {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.about-us .container .history-element .left-element .text,
+.about-us .container .history-element .right-element .text {
+  font-size: 1.0em;
+  color: #777777;
+  line-height: 22px;
+}
+
+.about-us .container .history-element .left-element {
+  text-align: right;
+}
+
+.about-us .container .history-element .left-element .wrapper {
+  width: 50%;
+  float: right;
+}
+
+.about-us .container .history-element .right-element {
+  text-align: left;
+}
+
+.about-us .container .history-element .right-element .wrapper {
+  width: 50%;
+  float: left;
+}
+
+.about-us .container .history-element .middle-element {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 260px;
+}
+
+.about-us .container .history-element .middle-element .circle {
+  border-radius: 50%;
+  border: 8px solid #f1f1f1;
+  width: 170px;
+  height: 170px;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.about-us .container .history-element .middle-element .circle:last-child {
+  background-color: #fdd135;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 30px;
 }
 
 /*MEDIA QUERIES*/

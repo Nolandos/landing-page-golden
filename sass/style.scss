@@ -261,6 +261,108 @@ body {
     }
 }
 
+.about-us {
+    @extend .flex-column;
+
+    .about-header {
+        @extend .header-model;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .container {
+        @extend .flex-column;
+        position: relative;
+        margin-bottom: 10%;
+
+        .line {
+            height: 92%;
+            border-left: 4px solid #f1f1f1;
+            position: absolute;
+            margin-top: 110px;
+            margin-bottom: 110px;    
+            left: 50%;
+            z-index: -1;                    
+        }
+
+        .history-element {
+            width: 100%;
+            margin-top: 90px;
+            display: flex;
+            justify-content: center;
+
+            .left-element,
+            .right-element {
+                width: 33%;
+                padding: 0 15px;
+
+                .title {
+                    font-family: $font-first;
+                    font-size: 1.5em;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
+                .description {
+                    font-family: $font-first;
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                }
+                
+                .text {
+                    font-size: 1.0em;
+                    color: #777777;
+                    line-height: 22px;
+                }
+            }
+
+            .left-element {
+                text-align: right;
+                .wrapper {
+                    width: 50%;
+                    float: right;
+                }
+            }
+
+            .right-element {
+                text-align: left;
+                .wrapper {
+                    width: 50%;
+                    float: left;
+                }
+            }
+
+            .middle-element {
+                display: flex;
+                justify-content: center;
+                width: 260px;
+                              
+                .circle {
+                    border-radius: 50%;
+                    border: 8px solid #f1f1f1;
+                    width: 170px;
+                    height: 170px;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &:last-child {
+                        background-color: #fdd135;
+                        color: #fff;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-size: 1.2em;
+                        font-family: $font-first;
+                        font-weight: 800;
+                        line-height: 30px;
+                    }                                       
+                }
+            }
+        }
+    }
+}
+
+
 /*MEDIA QUERIES*/
 @media(max-width: 767px) {
     .main {

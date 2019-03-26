@@ -591,6 +591,67 @@ body {
   font-size: 1.2em;
 }
 
+/*FOOTER*/
+.footer {
+  height: 75px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.footer .container {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.footer .container .wrapper {
+  width: 42%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.footer .container .wrapper .text {
+  font-family: "Montserrat", sans-serif;
+  color: #777777;
+  font-weight: bold;
+}
+
+.footer .container .media-wrapper {
+  width: 58%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.footer .container .media-wrapper > div {
+  border-radius: 50%;
+  border: none;
+  background-color: #111111;
+  width: 35px;
+  height: 35px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-left: 2%;
+}
+
+.footer .container .media-wrapper > div:hover {
+  transform: scale(1.1);
+}
+
+.footer .container .media-wrapper > div > a {
+  color: #fff;
+  text-decoration: none;
+}
+
 /*MEDIA QUERIES*/
 @media (max-width: 992px) {
   .header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title, .our-team .team-header .title, .contact .contact-header .title, .header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text, .our-team .team-header .text, .contact .contact-header .text {

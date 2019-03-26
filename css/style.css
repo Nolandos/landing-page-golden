@@ -467,7 +467,15 @@ body {
 }
 
 /*LOGO-COMPANY*/
+.logo-company {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
 .logo-company .container {
+  width: 70%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;

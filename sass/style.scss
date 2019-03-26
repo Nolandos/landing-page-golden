@@ -461,7 +461,10 @@ body {
 /*LOGO-COMPANY*/
 
 .logo-company {
+    display: flex;
+    justify-content: center;
     .container {
+        width: 70%;
         display: flex;
         justify-content: center;
         margin-top: 5%;
@@ -528,6 +531,12 @@ body {
                         
                     }
                 }
+            }
+        }
+
+        .logo-company {
+            .container {
+                
             }
         }
     }

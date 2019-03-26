@@ -500,6 +500,9 @@ body {
     margin: 0 auto;
     float: none;
   }
+  .our-team .container {
+    width: 90%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -537,6 +540,23 @@ body {
   }
   .services .container .box-service {
     width: 100%;
+  }
+  .our-team .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .our-team .container .team-box {
+    width: 90%;
+    margin-top: 5%;
+    border-bottom: 2px solid #111111;
+    padding-bottom: 15px;
+  }
+  .description-wrapper .description {
+    padding: 0 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

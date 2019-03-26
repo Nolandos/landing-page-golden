@@ -507,7 +507,13 @@ body {
                 }
             }
         }
-    }    
+    }
+    
+    .our-team {
+        .container {
+            width: 90%;
+        }
+    }
 }
 
 @media(max-width: 767px) {
@@ -557,4 +563,27 @@ body {
             }
         }
     }
+
+    .our-team {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .team-box {
+                width: 90%;
+                margin-top: 5%;
+                border-bottom: 2px solid #111111;
+                padding-bottom: 15px;
+
+            }
+        }
+    }
+
+    .description-wrapper {
+        .description {
+            padding: 0 15px;
+        }
+    }
+
 }

@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 /*variables*/
 /*extends*/
-.flex-column, .main, .main .layer, .main .jumbotron, .services, .services .container .box-service, .portfolio, .portfolio .container .photo-box .description, .about-us, .about-us .container {
+.flex-column, .main, .main .layer, .main .jumbotron, .services, .services .container .box-service, .portfolio, .portfolio .container .photo-box .description, .about-us, .about-us .container, .our-team, .our-team .container .team-box {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -30,7 +30,7 @@
   background-color: #e0bb33;
 }
 
-.header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title {
+.header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title, .our-team .team-header .title {
   font-family: "Montserrat", sans-serif;
   font-size: 3em;
   font-weight: bold;
@@ -38,7 +38,7 @@
   text-transform: uppercase;
 }
 
-.header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text {
+.header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text, .our-team .team-header .text {
   font-family: "Playfair Display", serif;
   font-size: 1.2em;
   color: #777777;
@@ -366,15 +366,110 @@ body {
   line-height: 30px;
 }
 
+.our-team {
+  background-color: #f7f7f7;
+}
+
+.our-team .team-header {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.our-team .description-wrapper {
+  max-width: 800px;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.our-team .description-wrapper .description {
+  font-size: 1.3em;
+  color: #777777;
+  font-style: italic;
+}
+
+.our-team .container {
+  width: 70%;
+  max-width: 1250px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 3%;
+}
+
+.our-team .container .team-box {
+  width: 30%;
+}
+
+.our-team .container .team-box .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.our-team .container .team-box .text {
+  margin-top: 5px;
+  color: #777777;
+  font-style: italic;
+}
+
+.our-team .container .team-box .circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: #111111;
+}
+
+.our-team .container .team-box .media-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+}
+
+.our-team .container .team-box .media-wrapper > div {
+  border: 2px solid #111111;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-right: 4%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  cursor: pointer;
+}
+
+.our-team .container .team-box .media-wrapper > div:last-child {
+  margin-right: 0;
+}
+
+.our-team .container .team-box .media-wrapper > div:hover {
+  background-color: #111111;
+}
+
+.our-team .container .team-box .media-wrapper > div:hover > a {
+  color: #fff;
+}
+
+.our-team .container .team-box .media-wrapper > div > a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 1.2em;
+}
+
 /*MEDIA QUERIES*/
 @media (max-width: 992px) {
-  .header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title, .header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text {
+  .header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title, .our-team .team-header .title, .header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text, .our-team .team-header .text {
     padding: 0 25px;
   }
-  .header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title {
+  .header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title, .our-team .team-header .title {
     font-size: 2.3em;
   }
-  .header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text {
+  .header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text, .our-team .team-header .text {
     font-size: 1em;
   }
   .about-us .container .line {

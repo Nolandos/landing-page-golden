@@ -362,6 +362,97 @@ body {
     }
 }
 
+.our-team {
+    @extend .flex-column;
+    background-color: #f7f7f7;
+
+    .team-header {
+        @extend .header-model;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .description-wrapper {
+        max-width: 800px;
+        text-align: center;
+        margin-top: 3%;
+
+        .description {
+            font-size: 1.3em;
+            color: #777777;
+            font-style: italic;
+        }
+    }
+
+    .container {
+        width: 70%;
+        max-width: 1250px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3%;
+
+        .team-box {
+            @extend .flex-column;
+            width: 30%;
+
+            .title {
+                font-family: $font-first;
+                font-size: 1.2em;
+                margin-bottom: 0;
+            }
+
+            .text {
+                margin-top: 5px;
+                color: #777777;
+                font-style: italic;
+            }
+
+            .circle {
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                background-color: #111111;
+            }
+
+            .media-wrapper {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                
+                >div {
+                    border: 2px solid #111111;
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 4%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &:hover {
+                        background-color: #111111;
+
+                        >a {
+                            color: #fff;
+                        }
+                    }
+
+
+                        >a {
+                            text-decoration: none;
+                            color: #111111;
+                            font-size: 1.2em;
+                        }
+                }
+                
+            }
+        }
+    }
+}
+
 
 /*MEDIA QUERIES*/
 
@@ -416,7 +507,7 @@ body {
                 }
             }
         }
-    }
+    }    
 }
 
 @media(max-width: 767px) {

@@ -207,6 +207,7 @@ body {
     }
 }
 
+/*PORTFOLIO*/
 .portfolio {
     @extend .flex-column;
     background-color: #f7f7f7;
@@ -261,6 +262,7 @@ body {
     }
 }
 
+/*ABOUT US*/
 .about-us {
     @extend .flex-column;
 
@@ -362,6 +364,7 @@ body {
     }
 }
 
+/*OUR TEAM*/
 .our-team {
     @extend .flex-column;
     background-color: #f7f7f7;
@@ -376,6 +379,7 @@ body {
         max-width: 800px;
         text-align: center;
         margin-top: 3%;
+        margin-bottom: 5%;
 
         .description {
             font-size: 1.3em;

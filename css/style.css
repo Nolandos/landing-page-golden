@@ -201,6 +201,7 @@ body {
   color: #fdd135;
 }
 
+/*PORTFOLIO*/
 .portfolio {
   background-color: #f7f7f7;
 }
@@ -258,6 +259,7 @@ body {
   margin-top: 2px;
 }
 
+/*ABOUT US*/
 .about-us .about-header {
   margin-top: 5%;
   text-align: center;
@@ -366,6 +368,7 @@ body {
   line-height: 30px;
 }
 
+/*OUR TEAM*/
 .our-team {
   background-color: #f7f7f7;
 }
@@ -379,6 +382,7 @@ body {
   max-width: 800px;
   text-align: center;
   margin-top: 3%;
+  margin-bottom: 5%;
 }
 
 .our-team .description-wrapper .description {

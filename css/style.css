@@ -501,7 +501,7 @@ body {
   background-image: url("../images/contact-image.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 110%;
+  background-position: 50%;
 }
 
 .contact .contact-header {
@@ -525,6 +525,7 @@ body {
 }
 
 .contact .container > form .send-button {
+  transform: scale(0.7);
   margin-top: 3%;
 }
 
@@ -547,6 +548,22 @@ body {
   border: none;
 }
 
+.contact .container > form .box-personal > input:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+}
+
+.contact .container > form .box-personal > input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+}
+
 .contact .container > form .box-message {
   width: 47%;
 }
@@ -556,6 +573,22 @@ body {
   padding: 10px;
   border-radius: 5px;
   border: none;
+}
+
+.contact .container > form .box-message .mail-content:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+}
+
+.contact .container > form .box-message .mail-content::placeholder {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.2em;
 }
 
 /*MEDIA QUERIES*/
@@ -603,6 +636,25 @@ body {
   .logo-company .container .logo-box {
     width: 40%;
     margin-top: 35px;
+  }
+  .contact .container > form {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .contact .container > form .box-personal,
+  .contact .container > form .box-message {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .contact .container > form .box-message .mail-content {
+    width: 100%;
   }
 }
 

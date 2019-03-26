@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 /*variables*/
 /*extends*/
-.flex-column, .main, .main .layer, .main .jumbotron, .services, .services .container .box-service, .portfolio, .portfolio .container .photo-box .description, .about-us, .about-us .container, .our-team, .our-team .container .team-box {
+.flex-column, .main, .main .layer, .main .jumbotron, .services, .services .container .box-service, .portfolio, .portfolio .container .photo-box .description, .about-us, .about-us .container, .our-team, .our-team .container .team-box, .contact {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -13,7 +13,7 @@
       align-items: center;
 }
 
-.button-model, .main .jumbotron .button {
+.button-model, .main .jumbotron .button, .contact .container > form .send-button {
   font-family: "Montserrat", sans-serif;
   padding: 30px 60px;
   border-radius: 5px;
@@ -26,11 +26,11 @@
   cursor: pointer;
 }
 
-.button-model:hover, .main .jumbotron .button:hover {
+.button-model:hover, .main .jumbotron .button:hover, .contact .container > form .send-button:hover {
   background-color: #e0bb33;
 }
 
-.header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title, .our-team .team-header .title {
+.header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title, .our-team .team-header .title, .contact .contact-header .title {
   font-family: "Montserrat", sans-serif;
   font-size: 3em;
   font-weight: bold;
@@ -38,7 +38,7 @@
   text-transform: uppercase;
 }
 
-.header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text, .our-team .team-header .text {
+.header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text, .our-team .team-header .text, .contact .contact-header .text {
   font-family: "Playfair Display", serif;
   font-size: 1.2em;
   color: #777777;
@@ -494,15 +494,79 @@ body {
       justify-content: center;
 }
 
+/*CONTACT*/
+.contact {
+  min-height: 700px;
+  background-color: #212121;
+  background-image: url("../images/contact-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 110%;
+}
+
+.contact .contact-header {
+  color: #fff;
+  margin-top: 5%;
+}
+
+.contact .container {
+  width: 70%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.contact .container > form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .container > form .send-button {
+  margin-top: 3%;
+}
+
+.contact .container > form .box-personal {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  width: 47%;
+}
+
+.contact .container > form .box-personal > input {
+  padding: 15px;
+  margin-bottom: 3%;
+  height: 30.33%;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact .container > form .box-message {
+  width: 47%;
+}
+
+.contact .container > form .box-message .mail-content {
+  resize: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
 /*MEDIA QUERIES*/
 @media (max-width: 992px) {
-  .header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title, .our-team .team-header .title, .header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text, .our-team .team-header .text {
+  .header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title, .our-team .team-header .title, .contact .contact-header .title, .header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text, .our-team .team-header .text, .contact .contact-header .text {
     padding: 0 25px;
   }
-  .header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title, .our-team .team-header .title {
+  .header-model .title, .services .services-header .title, .portfolio .portfolio-header .title, .about-us .about-header .title, .our-team .team-header .title, .contact .contact-header .title {
     font-size: 2.3em;
   }
-  .header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text, .our-team .team-header .text {
+  .header-model .text, .services .services-header .text, .portfolio .portfolio-header .text, .about-us .about-header .text, .our-team .team-header .text, .contact .contact-header .text {
     font-size: 1em;
   }
   .about-us .container .line {

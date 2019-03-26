@@ -479,6 +479,68 @@ body {
     }
 }
 
+/*CONTACT*/
+
+.contact {
+    @extend .flex-column;
+    min-height: 700px;
+    background-color: #212121;
+    background-image: url('../images/contact-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 110%;
+    
+
+    .contact-header {
+        @extend .header-model;
+        color: #fff;
+        margin-top: 5%;
+    }
+
+    .container {
+        width: 70%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+        >form {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .send-button {
+                @extend .button-model;
+                margin-top: 3%;
+            }
+
+            .box-personal {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                width: 47%;
+
+                >input {
+                    padding: 15px;
+                    margin-bottom: 3%;
+                    height: 30.33%;
+                    width: 80%;
+                    border-radius: 5px;
+                    border: none;
+                }
+            }
+
+            .box-message {
+                width: 47%;
+                .mail-content {
+                    resize: none;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
 
 /*MEDIA QUERIES*/
 

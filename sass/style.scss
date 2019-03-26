@@ -782,4 +782,20 @@ body {
         }
     }
 
+    .footer {
+        .container {
+            .wrapper,
+            .media-wrapper {
+                width: 50%;
+            }
+
+            .wrapper {
+                .text {
+                    padding: 0 15px;
+                }
+            }
+        }
+
+    }
+
 }

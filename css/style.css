@@ -776,5 +776,12 @@ body {
     width: 80%;
     margin-top: 35px;
   }
+  .footer .container .wrapper,
+  .footer .container .media-wrapper {
+    width: 50%;
+  }
+  .footer .container .wrapper .text {
+    padding: 0 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
